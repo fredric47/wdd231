@@ -1,0 +1,140 @@
+/* 320px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #3B0154;
+    --secondary-color: #A69302;
+}
+
+main {
+    background-color: rgb(248, 245, 242);
+    padding: 1rem;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 45px auto 45px;
+    border-bottom: solid 2px #ddd;
+    padding: .5rem;
+    column-gap: 8px;
+    align-items: end;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.5rem;
+}
+
+header li.current {
+    background-color: rgb(255, 132, 255);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "≡";
+    font-size: 2rem;
+    font-size: 44px;
+}
+
+.hamburger.show::after {
+    content: "\00d7";
+    font-size: 2rem;
+    font-size: 44px;
+} 
+
+.navigation {
+    display: none;
+    width: 100%;
+}
+
+.navigation li {
+    list-style: none;
+    height: 44px;
+    border-bottom: solid 2px #ddd;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation li:hover {
+    background-color: rgba(255, 0, 0, 0.375);
+}
+
+.navigation.show {
+    display: block;
+}
+
+/*main*/
+
+main {
+    display: grid;
+}
+
+section {
+    border: solid 2px var(--main-color);
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.true {
+    border: solid 2px rgb(0, 201, 74);
+    background-color: rgb(178, 255, 180);
+}
+
+.false {
+    border: solid 2px rgb(202, 88, 88);
+    background-color: rgb(255, 163, 163);
+}
+
+/* footer */
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    height: 44px;
+    width: 44px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px
+}
+
+.social-links a:hover {
+    background-color: #ddd;
+}
