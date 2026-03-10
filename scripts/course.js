@@ -78,10 +78,14 @@ const courses = [
     }
 ]
 
+function totalCredits(total, next) {
+    return total + next;
+};
 
 let courseContainer = document.getElementById('courses');
 
 function populateCoursesDiv(course) {
+    let creditsArray = new Array();
     course.forEach(course => {
         let card = document.createElement('section');
         card.classList.add(`${course.completed}`);
@@ -92,10 +96,14 @@ function populateCoursesDiv(course) {
         let credits = document.createElement('span');
         credits.textContent = `(${course.credits}-credits)`
 
+        creditsArray.push(course.credits);
+
         card.append(cName);
         card.append(credits);
         courseContainer.append(card);
     });
+    let creditSum = creditsArray.reduce(totalCredits);
+    document.getElementById('totalCredits').innerHTML = `Total credits: ${creditSum}`;
 };
 
 allCourses(courses);
