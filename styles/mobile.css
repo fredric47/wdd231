@@ -13,11 +13,6 @@
     /* --main-font: font-family: "Open Sans", sans-serif; */
 }
 
-main {
-    background-color: rgb(248, 245, 242);
-    padding: 1rem;
-    color: var(--main-color);
-}
 
 header {
     color: var(--main-color);
@@ -62,8 +57,6 @@ header li.current {
 
 .hamburger.show::after {
     content: "\00d7";
-    font-size: 2rem;
-    font-size: 44px;
 } 
 
 .navigation {
@@ -97,7 +90,9 @@ header a {
 /*main*/
 
 main {
-    display: grid;
+    background-color: rgb(248, 245, 242);
+    padding: 1rem;
+    color: var(--main-color);
 }
 
 button {
