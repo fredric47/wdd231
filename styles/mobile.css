@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open sans';
 }
 
 :root {
     --main-color: #3B0154;
     --secondary-color: #A69302;
     --secondary-color-transparent: #a6930281;
+    /* --main-font: font-family: "Open Sans", sans-serif; */
 }
 
 main {
@@ -33,8 +35,8 @@ header div {
 
 header img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 45px;
 }
 
 header span {
