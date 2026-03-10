@@ -5,4 +5,23 @@
         margin: 0 auto;
     }
 
+    #nav-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav-bar ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-bar li {
+        border: solid 2px var(--main-color);
+        padding: 1.5rem;
+        margin: .2rem 1rem;
+    }
+
+    #ham-btn {
+        display: none;
+    }
 }

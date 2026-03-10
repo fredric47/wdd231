@@ -8,11 +8,17 @@
 :root {
     --main-color: #3B0154;
     --secondary-color: #A69302;
+    --secondary-color-transparent: #a6930281;
 }
 
 main {
     background-color: rgb(248, 245, 242);
     padding: 1rem;
+    color: var(--main-color);
+}
+
+header {
+    color: var(--main-color);
 }
 
 header div {
@@ -36,7 +42,8 @@ header span {
 }
 
 header li.current {
-    background-color: rgb(255, 132, 255);
+    text-decoration: none;
+    background-color: var(--secondary-color-transparent);
 }
 
 .hamburger {
@@ -77,7 +84,8 @@ header a {
 }
 
 .navigation li:hover {
-    background-color: rgba(255, 0, 0, 0.375);
+    background-color: var(--secondary-color-transparent);
+    font-weight: bold;
 }
 
 .navigation.show {
@@ -90,20 +98,27 @@ main {
     display: grid;
 }
 
+button {
+    padding: .5rem;
+    height: 44px;
+    margin: .5rem;
+}
+
 section {
     border: solid 2px var(--main-color);
     padding: 1rem;
     margin: .5rem;
+    text-align: center;
 }
 
 .true {
-    border: solid 2px rgb(0, 201, 74);
-    background-color: rgb(178, 255, 180);
+    border: solid 2px rgba(73, 199, 119, 0.608);
+    background-color: rgba(208, 253, 209, 0.623);
 }
 
 .false {
-    border: solid 2px rgb(202, 88, 88);
-    background-color: rgb(255, 163, 163);
+    border: solid 2px rgba(200, 129, 129, 0.629);
+    background-color: rgba(255, 195, 195, 0.66);
 }
 
 /* footer */
@@ -112,6 +127,11 @@ footer {
     background-color: #eee;
     padding: 1rem 10px;
     text-align: center;
+}
+
+footer p {
+    padding: .25rem;
+    margin: .1rem;
 }
 
 .social-links {
