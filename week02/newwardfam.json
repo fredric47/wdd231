@@ -1,0 +1,25 @@
+{
+    "familyName": "Doe",
+    "dateMovedIn": "3-10-2026",
+    "numberOfMembers": 3,
+    "visitedByBishopric": true,
+    "individualMemberInfo": [
+        {
+            "fullName": "John Doe",
+            "gender": "male",
+            "birthdate": "4-1-1995"
+        },
+        {
+            "fullName": "Jane Doe",
+            "gender": "female",
+            "birthdate": "8-9-1998"
+        },
+        {
+            "fullName": "Jimmy Doe",
+            "gender": "male",
+            "birthdate": "10-22-2022"
+        }
+
+    ]
+
+}
