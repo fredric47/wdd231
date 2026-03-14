@@ -3,42 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cove Fort Chamber of Comerse</title>
-    <meta name="description" content="A chamber of comerse for the Cove Fort region, designed to promote thriving buisnesses and self sufficient citizens">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/wide.css">
+    <script src="scripts/dates.js" defer></script>
+    <title>Cove Fort Chamber of commerce</title>
+    <meta name="description" content="A chamber of commerce for the Cove Fort region, designed to promote thriving buisnesses and self sufficient citizens">
     <meta name="author" content="Luke Pratt">
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="Chamber of comerse for central Cove Fort">
-    <meta property="og:description" content="This page is for members of the Cove Fort chamber of comerse. It is also for anyone wanting to learn more about our chamber or to help with events.">
+    <meta property="og:title" content="Chamber of commerce for central Cove Fort">
+    <meta property="og:description" content="This page is for members of the Cove Fort chamber of commerce. It is also for anyone wanting to learn more about our chamber or to help with events.">
     <meta property="og:image" content="https://github.com/fredric47/wdd231/blob/main/chamber/images/splash.jpg">
-    <meta property="og:url" content="Cove Fort Chamber of Comerse">
+    <meta property="og:url" content="Cove Fort Chamber of commerce">
 </head>
 <body>
     <header>
-        <img src="images/opposing-rooks-fancy-purple-gold.svg" alt="rooks in oposition">
-        <h1>Cove Fort Chamber of Comerse</h1>
-        <a href="">Home</a>
-        <a href="">Directory</a>
-        <a href="">Join</a>
-        <a href="">Discover</a>
+        <img src="images/opposing-rooks-fancy-purple-gold.svg" class="icon" alt="rooks in oposition">
+        <h2>Cove Fort Chamber of commerce</h2>
+        <div id="navBar">
+            <a href="">Home</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+            <a href="">Discover</a>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="open navigation menu"></button>
     </header>
     <main>
-        <h2>Main here</h2>
+        <!-- <h2>Home</h2> ///////////////////////////////////////////////////// -->
     </main>
     <footer>
         <div>
-            <h2>Cove FOrt Chamber of Comerse</h2>
+            <h2>Cove Fort Chamber of commerce</h2>
             <p>32West-East 64 North-South</p>
             <p>HC 3.14, Box 159265</p>
             <p>chamberfort@snailmail.com</p>
             <p>(1-234-567-8910)</p>
         </div>
-        <div>
-            <a href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon"></a>
-            <a href="https://www.facebook.com/share/1EHwu1nNBN/"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
-            <a href="https://www.linkedin.com/in/luke-pratt-696b66339/"><img src="images/linkedin-icon.svg" alt="linkedIn icon"></a>
+        <div id="socialLinks">
+            <a href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon" class="icon"></a>
+            <a href="https://www.facebook.com/share/1EHwu1nNBN/"><img src="images/facebook-icon.svg" alt="facebook icon" class="icon"></a>
+            <a href="https://www.linkedin.com/in/luke-pratt-696b66339/"><img src="images/linkedin-icon.svg" alt="linkedIn icon" class="icon"></a>
         </div>
         <div>
             <h2>WDD232 Class Project</h2>
+            <p>Luke Pratt</p>
+            <p>©️ | <span id="currentYear">YEAR HERE</span> | Cove Fort Chamber of Commerce</p>
+            <p>Last Modificaiton: <span id="lastModified">LAST MODIFIED HERE</span></p>
         </div>
     </footer>
 </body>
