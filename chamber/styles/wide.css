@@ -35,6 +35,11 @@ header a {
 
 header a:hover {
     background-color: rgb(0, 196, 250);
+    color: white;
+}
+
+.current {
+    background-color: rgb(0, 196, 250);
 }
 
 .icon {
