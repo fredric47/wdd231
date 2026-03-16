@@ -15,10 +15,12 @@ body {
 header {
     color: var(--main-color);
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 44px auto auto 44px;
+    /* gap: 10px; */
+    grid-template-columns: 44px auto auto 44px 44px;
+    grid-template-rows: auto;
     border: solid 2px var(--main-color);
     align-items: center;
+    text-align: center;
 }
 
 header a {
@@ -38,6 +40,10 @@ header a:hover {
     color: white;
 }
 
+header h2 {
+    padding: 1rem;
+}
+
 .current {
     background-color: rgb(0, 196, 250);
 }
@@ -48,10 +54,32 @@ header a:hover {
     padding: .5rem;
 }
 
-#navBar {
+#nav-bar {
+    /* grid-row: 1/-1; */
     display: flex;
     justify-content: space-around;
     /* height: 44px; */
+}
+
+#ham-btn {
+    display: none;
+    width: 44px;
+    height: 44px;
+}
+
+#ham-btn::after {
+    content: "≡";
+    font-size: 3rem;
+}
+
+#ham-btn.show::after {
+    content: "\00d7";
+}
+
+#lightdark {
+    width: 44px;
+    height: 44px;
+    padding: 1rem;
 }
 
 
