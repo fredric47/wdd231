@@ -81,12 +81,54 @@ header h2 {
     padding: 1rem;
 }
 
+#lightdark:hover {
+    background-color: rgb(0, 196, 250);
+    cursor: pointer;
+    /* box-shadow: 0 0 1rem 1rem rgb(0, 196, 250); */
+}
+
 
 
 /* MAIN */
 
 main {
     color: var(--main-color);
+}
+
+#cards {
+    display: grid;
+    gap: .7rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#cards section {
+    border: solid 2px var(--main-color);
+    display: grid;
+    place-content: center;
+    padding: .2rem;
+}
+
+#cards img {
+    width: 300px;
+    height: auto;
+    padding: .2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.notVisible {
+    background-color: rgb(237, 240, 240);
+}
+
+.notVisible img{
+    display: none;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
 }
 
 /* FOOTER */
@@ -96,6 +138,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
     padding: .5rem;
     border: solid 2px var(--main-color);
 }
