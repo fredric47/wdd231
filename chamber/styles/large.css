@@ -1,8 +1,12 @@
+* {
+    font-family: "open Sans";
+}
+
 :root {
     --main-color: #3B0154;
     --secondary-color: #A69302;
     --secondary-color-transparent: #a6930281;
-    /* --main-font: font-family: "Open Sans", sans-serif; */
+    /* --main-font: font-family: "Open Sans"; */
 }
 
 body {
