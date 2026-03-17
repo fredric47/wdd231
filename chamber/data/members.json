@@ -4,7 +4,7 @@
         "companyAddress": "21 Cherry St CV UT 84173",
         "companyPhoneNo": "435-222-0155",
         "companyURL": "www.Apple/Pie/secure/website",
-        "companyImg": "",
+        "companyImg": "apple-pie.webp",
         "membershipLevel": 3 
     },
 
@@ -13,7 +13,7 @@
         "companyAddress": "42 Stone Rd CV UT 84711",
         "companyPhoneNo": "435-622-3122",
         "companyURL": "www.Stone/Cubes/secure/website",
-        "companyImg": "",
+        "companyImg": "stone-bricks.webp",
         "membershipLevel": 2
     },
 
@@ -22,7 +22,7 @@
         "companyAddress": "66 Muerte Rd CV UT 84723",
         "companyPhoneNo": "253-921-4113",
         "companyURL": "www.Face/Paste/secure/website",
-        "companyImg": "",
+        "companyImg": "costic-plant.webp",
         "membershipLevel": 1
     },
 
@@ -31,7 +31,7 @@
         "companyAddress": "25 Sunshine Lane CV UT 84791",
         "companyPhoneNo": "435-253-2025",
         "companyURL": "www.Fast/Packages/secure/website",
-        "companyImg": "",
+        "companyImg": "delievery-van.svg",
         "membershipLevel": 3
     },
 
@@ -40,16 +40,16 @@
         "companyAddress": "91 Hidden Rd CV UT 84722",
         "companyPhoneNo": "253-948-5459",
         "companyURL": "www.Eagle/Eggs/notdarkweb/site",
-        "companyImg": "",
+        "companyImg": "eggs.webp",
         "membershipLevel": 1
-    }
+    },
 
     {
         "companyName": "Fred's Fabulous Fritters",
         "companyAddress": "61 Clay St CV UT 84711",
         "companyPhoneNo": "435-881-5621",
         "companyURL": "www.Best/FrittersEver/secure/website",
-        "companyImg": "",
+        "companyImg": "fritters.webp",
         "membershipLevel": 2
     },
 
@@ -58,7 +58,7 @@
         "companyAddress": "10 Boudin Rd CV UT 84713",
         "companyPhoneNo": "421-563-8971",
         "companyURL": "www.GumboInDaBayou/secure/website",
-        "companyImg": "",
+        "companyImg": "gumbo.webp",
         "membershipLevel": 3
     },
 
@@ -67,7 +67,7 @@
         "companyAddress": "115 Main St Cv UT 84713",
         "companyPhoneNo": "521-699-0188",
         "companyURL": "www.SoftSleep/secure/website",
-        "companyImg": "",
+        "companyImg": "hotel.webp",
         "membershipLevel": 1
     }
 ]
