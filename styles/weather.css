@@ -1,0 +1,17 @@
+
+#weatherCard {
+    border: 2px solid rgb(170, 170, 215);
+    padding: 1rem;
+    text-align: center;
+}
+
+#tempLine {
+    font-weight: 700;
+    font-size: larger;
+}
+
+#current-temp {
+    font-weight: 800;
+    font-size: large;
+    color: red;
+}

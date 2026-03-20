@@ -11,7 +11,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             console.log("Success:", data); // testing and stuff
-            //displayResults(data);
+            displayResults(data);
         } else {
             throw Error(await response.text());
             
@@ -20,5 +20,16 @@ async function apiFetch() {
         console.log("ERROR", error);
     }
 };
+
+function displayResults(data) {
+    // weatherIcon = apiFetch
+    console.log('Results DISPLAYED')
+    nowTemp.innerHTML = `${data.main.temp}°F`
+    figCaption.innerHTML = data.weather[0].description
+    // const iconSource = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`
+    const iconSource = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+    weatherIcon.setAttribute('src', iconSource)
+    weatherIcon.setAttribute('alt', data.weather[0].description)
+}
 
 apiFetch();
