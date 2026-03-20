@@ -24,6 +24,7 @@ header {
     grid-template-rows: auto;
     align-items: center;
     text-align: center;
+    border-bottom: solid 2px var(--main-color);
 }
 
 header a {
