@@ -14,15 +14,3 @@ listButton.addEventListener('click', () => {
     document.querySelector('#cards').classList.toggle('list');
 });
 
-
-const home = 'https://fredric47.github.io/wdd231/chamber/index.html';
-document.getElementById('home').href = home;
-
-const directory = 'https://fredric47.github.io/wdd231/chamber/directory.html';
-document.getElementById('directory').href = directory;
-
-const join = 'https://fredric47.github.io/wdd231/chamber/join.html';
-document.getElementById('join').href = join;
-
-const discover = 'https://fredric47.github.io/wdd231/chamber/discover.html';
-document.getElementById('discover').href = discover;
