@@ -1,12 +1,12 @@
 const hamButton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
 
-const listButton = document.querySelector('#lightdark')
+const listButton = document.querySelector('#gridList')
 
-hamButton.addEventListener('click', () => {
-    hamButton.classList.toggle('show');
-    navBar.classList.toggle('show');
-});
+// hamButton.addEventListener('click', () => {
+//     hamButton.classList.toggle('show');
+//     navBar.classList.toggle('show');
+// });
 
 listButton.addEventListener('click', () => {
     document.querySelectorAll('#cards section').forEach(card => {  //used copilot to figure this out

@@ -135,6 +135,11 @@ main {
     flex-direction: column;
 }
 
+#gridList {
+    padding: 1rem;
+    margin: 1rem;
+}
+
 /* FOOTER */
 
 footer {
