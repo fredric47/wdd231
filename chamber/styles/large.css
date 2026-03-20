@@ -109,8 +109,10 @@ main {
 #cards section {
     border: solid 2px var(--main-color);
     display: grid;
-    place-content: center;
+    place-items: center;
+    text-align: center;
     padding: .2rem;
+    background: rgb(254, 242, 242);
 }
 
 #cards img {
