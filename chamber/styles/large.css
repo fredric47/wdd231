@@ -116,7 +116,7 @@ main {
 }
 
 #cards img {
-    width: 300px;
+    width: 75%;
     height: auto;
     padding: .2rem;
 }
