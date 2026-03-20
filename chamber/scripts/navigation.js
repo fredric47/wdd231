@@ -1,6 +1,5 @@
 const hamButton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
-
 const listButton = document.querySelector('#gridList')
 
 // hamButton.addEventListener('click', () => {
@@ -15,3 +14,9 @@ listButton.addEventListener('click', () => {
     document.querySelector('#cards').classList.toggle('list');
 });
 
+
+const home = 'https://fredric47.github.io/wdd231/chamber/index.html';
+document.getElementById('home').href = home;
+
+const directory = 'https://fredric47.github.io/wdd231/chamber/directory.html';
+document.getElementById('directory').href = home;
