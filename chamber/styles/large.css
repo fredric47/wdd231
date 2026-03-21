@@ -25,6 +25,7 @@ header {
     align-items: center;
     text-align: center;
     border-bottom: solid 2px var(--main-color);
+    margin-bottom: 1rem;
 }
 
 header a {
@@ -139,6 +140,34 @@ main {
 }
 
 #gridList {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* HOME */
+
+#heroImg {
+width: 100%;
+}
+
+#heroSection {
+    position: relative;
+}
+
+#callToAction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#largeJoin {
+    font-size: 45px;
+}
+
+.pageItems {
+    border:  solid 2px var(--main-color);
     padding: 1rem;
     margin: 1rem;
 }

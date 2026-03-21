@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/member-cards.js" defer></script>
+    <script src="scripts/spotlight-members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <title>Directory for Cove Fort Chamber of commerce</title>
     <meta name="description" content="A chamber of commerce for the Cove Fort region, designed to promote thriving buisnesses and self sufficient citizens">
     <meta name="author" content="Luke Pratt">
@@ -40,11 +41,33 @@
         <img id="lightdark" src="images/light-dark-icon.svg" alt="dark to licht icon">
     </header>
     <main>
-        <h1>Cove Fort Chamber of Commerce Home</h1>
-        <button id="gridList">Grid/List</button>
-        <div id="cards">
 
-        </div>
+        <section id="heroSection">
+            <div>
+                <img id="heroImg" src="images/hero-sunsetito.webp" alt="sunset hero">
+            </div>
+            
+            <div id="callToAction" class="pageItems">
+                <p>Become a part of this great cause today!</p>
+                <p><span id="largeJoin"><a href="https://fredric47.github.io/wdd231/chamber/join.html">Join!</a></span></p>
+            </div>
+        </section>
+
+        <section id="currentEvent" class="pageItems">
+            <h2>Current Events</h2>
+        </section>
+
+        <section id="weatherCard" class="pageItems">
+            <p id="tempLine">The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+
+        <section id="spotLight" class="pageItems">
+            <h2>Todays Spotlight Members!</h2>
+        </section>
 
     </main>
     <footer>

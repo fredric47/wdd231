@@ -1,14 +1,34 @@
+
 const url = 'https://raw.githubusercontent.com/fredric47/wdd231/refs/heads/main/chamber/data/members.json';
-const cards = document.querySelector('#cards');
 
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
     //console.table(data.prophets); //temporary testing of data response
-    displayMembers(data); //used copilot to help remove .members
+
+    getSpotlightMembers(data); //used copilot to help remove .members
+
 }
 
-const displayMembers = (members) => {
+const getSpotlightMembers = (members) => {
+
+    const spotlightMembers = [];
+    members.forEach(sLmember => {
+
+        if (sLmember.membershipLevel > 1) {
+            spotlightMembers.push(sLmember);
+        }
+    });
+
+    getRandomSLMember(spotlightMembers);
+}
+
+const getRandomSLMember = (slMember) => {
+    3
+}
+
+
+const displaySLMembers = (members) => {
     members.forEach(member => {
         let card = document.createElement('section');
         // card.classList.add('visible');  //Used copilot to figure this out
@@ -43,11 +63,3 @@ const displayMembers = (members) => {
 }
 
 getMemberData();
-
-const listButton = document.querySelector('#gridList')
-listButton.addEventListener('click', () => {
-    document.querySelectorAll('#cards section').forEach(card => {  //used copilot to figure this out
-        card.classList.toggle('notVisible');
-    });
-    document.querySelector('#cards').classList.toggle('list');
-});
