@@ -1,8 +1,8 @@
 
-const url = 'https://raw.githubusercontent.com/fredric47/wdd231/refs/heads/main/chamber/data/members.json';
+const urlLink = 'https://raw.githubusercontent.com/fredric47/wdd231/refs/heads/main/chamber/data/members.json';
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(urlLink);
     const data = await response.json();
     //console.table(data.prophets); //temporary testing of data response
 
