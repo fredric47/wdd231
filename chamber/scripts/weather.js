@@ -8,7 +8,9 @@ const country = document.querySelector('#countryOfTemp');
 const latitude = '38.60'
 const longitude = '-112.58'
 const url = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${latitude}&lon=${longitude}&appid=58895be9ebb4131d1df94a8d7aea6acb`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=58895be9ebb4131d1df94a8d7aea6acb&units=imperial`
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=58895be9ebb4131d1df94a8d7aea6acb&units=imperial`;
+
+
 async function apiFetch() {
     try {
         const response = await fetch(forecastUrl);
@@ -16,11 +18,12 @@ async function apiFetch() {
             const data = await response.json();
             console.log("Success:", data); // testing and stuff
             displayResults(data);
+            getForecastArray(data);
         } else {
             throw Error(await response.text());
-            
+
         }
-    } catch(error) {
+    } catch (error) {
         console.log("ERROR", error);
     }
 };
@@ -37,5 +40,77 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconSource)
     weatherIcon.setAttribute('alt', data.list[0].weather[0].description)
 }
+
+function getForecastArray(data) {
+    let forecastArray = data.list;
+    splitArray(forecastArray);
+}
+
+function splitArray(array) {
+    const chunks = [];
+    const chunkSize = 8;
+    for (i = 0; i < array.length; i += chunkSize) {
+        chunks.push(array.slice(i, i + chunkSize));
+    }
+    daysOutForecast(chunks);
+}
+
+function daysOutForecast(dayChunks) {
+    let minMaxArray = [];
+    dayChunks.forEach(day => {
+        let maxTemp = -777;
+        let minTemp = 777;
+        day.forEach(hourChunks => {
+            const temp = hourChunks.main.temp; //.list[0]
+            if (temp > maxTemp) {
+                maxTemp = temp;
+            } else if (temp < minTemp) {
+                minTemp = temp;
+            }
+        });
+        minMaxArray.push([maxTemp, minTemp]);
+    });
+    populateForecast(minMaxArray);
+}
+
+let forecastCardSection = document.querySelector('#forecast');
+function populateForecast(hiLowArray) {
+
+    const forecastDate = new Date();     //Used copilot for this 
+    let castDay = 0
+    hiLowArray.forEach(day => {
+
+        forecastDate.setDate(forecastDate.getDate() + castDay);
+        castDay = 1;
+
+        const fdate = forecastDate.toLocaleDateString("en-US", {    //Used copilot for this 
+            month: "long",
+            day: "numeric"
+        });
+
+        let forecastCard = document.createElement('div');
+        let date = document.createElement('h2')
+        let highTemp = document.createElement('p');
+        let lowTemp = document.createElement('p');
+
+        date.innerHTML = `${fdate}`;
+        highTemp.innerHTML = `High temp is: ${day[0]}`;
+        lowTemp.innerHTML = `Low temp is: ${day[1]}`;
+
+        highTemp.setAttribute('id', 'highTemp');
+        lowTemp.setAttribute('id', 'lowTemp');
+
+        forecastCard.appendChild(date);
+        forecastCard.appendChild(highTemp);
+        forecastCard.appendChild(lowTemp);
+        forecastCardSection.appendChild(forecastCard);
+    });
+}
+
+// function forcast(dailyData) {
+//     dailyData.forEach(maxTemp => {
+//         unit.list[0].main.temp
+//     });
+// }
 
 apiFetch();

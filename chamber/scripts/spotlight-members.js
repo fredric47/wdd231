@@ -1,16 +1,17 @@
 
 const urlLink = 'https://raw.githubusercontent.com/fredric47/wdd231/refs/heads/main/chamber/data/members.json';
+const spotlight = document.querySelector('#cards');
 
 async function getMemberData() {
     const response = await fetch(urlLink);
     const data = await response.json();
-    //console.table(data.prophets); //temporary testing of data response
+    //console.table(data); //temporary testing of data response
 
-    getSpotlightMembers(data); //used copilot to help remove .members
+    getHighLevelMembers(data); //used copilot to help remove .members
 
 }
 
-const getSpotlightMembers = (members) => {
+const getHighLevelMembers = (members) => {
 
     const spotlightMembers = [];
     members.forEach(sLmember => {
@@ -23,8 +24,14 @@ const getSpotlightMembers = (members) => {
     getRandomSLMember(spotlightMembers);
 }
 
-const getRandomSLMember = (slMember) => {
-    3
+const getRandomSLMember = (slMember) => {                   //google ai overview select couple random
+    let fIndex = Math.floor(Math.random() * slMember.length);
+    let sIndex;
+    do {
+        sIndex = Math.floor(Math.random() * slMember.length);
+    } while (fIndex === sIndex);
+    let randomSLMembers = [slMember[fIndex], slMember[sIndex]];
+    displaySLMembers(randomSLMembers);
 }
 
 
@@ -49,8 +56,8 @@ const displaySLMembers = (members) => {
         image.setAttribute('alt', `${member.companyName} company image`);
         image.setAttribute('src', `images/${member.companyImg}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
+        image.setAttribute('width', '250');
+        image.setAttribute('height', '225');
 
         card.appendChild(name);
         card.appendChild(address);
@@ -58,7 +65,7 @@ const displaySLMembers = (members) => {
         card.appendChild(url);
         card.appendChild(image);
         card.appendChild(membershipLevel);
-        cards.appendChild(card);
+        spotlight.appendChild(card);
     });
 }
 
