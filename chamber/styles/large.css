@@ -173,9 +173,9 @@ width: 100%;
 }
 
 #largeJoin {
-    font-size: 45px;
-    background-color: rgb(233, 244, 247);
-    padding: .5rem;
+    font-size: 35px;
+    background-color: rgb(255, 255, 255);
+    padding: .7rem;
     border-radius: 25%;
     box-shadow: 1px 1px 10px 5px rgb(39, 39, 42);
 }
@@ -190,10 +190,6 @@ width: 100%;
     border:  solid 2px var(--main-color);
     padding: 1rem;
     margin: 1rem;
-}
-
-#weatherCard{
-    /* background-color: red; */
 }
 
 #forecastHeader {
