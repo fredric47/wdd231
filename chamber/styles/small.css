@@ -20,7 +20,7 @@
     #callToAction {
         display: flex;
         align-items: center;
-        color: rgb(255, 255, 255);
+        color: white;
     }
 
     footer {
