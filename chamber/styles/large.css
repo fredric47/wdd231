@@ -163,15 +163,20 @@ width: 100%;
     text-align: center;
 }
 
+#largeJoin a {
+    color: var(--main-color);
+}
+
 #largeJoin {
     font-size: 45px;
-    background-color: white;
+    background-color: rgba(161, 173, 255, 0.641);
     padding: .5rem;
     border-radius: 25%;
+    box-shadow: 1px 1px 10px 5px black;
 }
 
 #largeJoin:hover {
-    background-color: rgb(255, 240, 240);
+    background-color: rgb(141, 136, 222);
 }
 
 .pageItems {
@@ -192,7 +197,7 @@ width: 100%;
 }
 
 #forecast {
-    background-color: rgba(240, 204, 204, 0.381);
+    background-color: rgba(204, 209, 240, 0.381);
     padding: .5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -205,11 +210,13 @@ width: 100%;
 }
 
 #highTemp {
-    color: red;
+    color: rgb(211, 0, 0);
+    font-weight: bolder;
 }
 
 #lowTemp {
-    color: blue;
+    color: rgb(0, 0, 203);
+    font-weight: bolder;
 }
 
 #currentEvents {
