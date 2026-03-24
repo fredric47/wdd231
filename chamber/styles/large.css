@@ -99,6 +99,7 @@ header h2 {
 
 main {
     color: var(--main-color);
+    text-align: center;
 }
 
 #cards {
