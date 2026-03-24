@@ -71,7 +71,8 @@
         <section id="weatherCard" class="pageItems">
             <p id="tempLine">The current temperature in <span id="cityOfTemp">CITY HERE</span>, <span id="countryOfTemp">COUNTRY HERE</span> is <span id="current-temp"></span></p>
             <figure class="pageItems">
-                <img id="weather-icon" src="" alt="current weather">
+                <!-- src is a default so page audits will be happy, but it's not needed. -->
+                <img id="weather-icon" src="https://openweathermap.org/img/wn/03n@2x.png" alt="current weather"> 
                 <figcaption></figcaption>
             </figure>
 
