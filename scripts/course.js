@@ -98,6 +98,10 @@ function populateCoursesDiv(course) {
 
         creditsArray.push(course.credits);
 
+        card.addEventListener('click', () => {  //courseDiv
+            displayCourseDetails(course);
+        });
+
         card.append(cName);
         card.append(credits);
         courseContainer.append(card);
@@ -142,3 +146,30 @@ function cseCourses(courses) {
 document.getElementById('allc').addEventListener('click', () => allCourses(courses));
 document.getElementById('wddc').addEventListener('click', () => wddCourses(courses));
 document.getElementById('csec').addEventListener('click', () => cseCourses(courses));
+
+
+const courseDetails = document.querySelector('#courseDetails');
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = ``;
+    courseDetails.innerHTML = `
+            <button id="closeButton">❌</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <h3>Credits: ${course.credits}</h3>
+            <p>${course.description}</p>
+            <p>${course.certificate}</p>
+            <h3>${course.technology.join(', ')}</h3>
+    `;
+    courseDetails.showModal();
+
+    courseDetails.addEventListener('click', (bob) => {   //Used copilot to get this the way it is
+        if (bob.target === courseDetails) {
+            courseDetails.close();
+        }
+    });
+
+    const closeButton = document.querySelector('#closeButton');
+    closeButton.addEventListener('click', () => {
+        courseDetails.close();
+    });
+};

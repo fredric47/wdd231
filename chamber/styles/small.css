@@ -8,6 +8,7 @@
 
     #nav-bar.show {
         display: grid;
+        grid-column: 1/-1;
     }
 
     #ham-btn {
@@ -16,11 +17,17 @@
         align-items: center;
     }
 
+    header {
+        grid-template-columns: 44px auto 44px;
+    }
 
     #callToAction {
-        display: flex;
         align-items: center;
         color: white;
+    }
+
+    #joinInvite {
+        display: none;
     }
 
     footer {

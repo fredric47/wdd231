@@ -20,7 +20,7 @@ header {
     color: var(--main-color);
     display: grid;
     /* gap: 10px; */
-    grid-template-columns: 44px auto auto 44px 44px;
+    grid-template-columns: 44px auto auto 44px;
     grid-template-rows: auto;
     align-items: center;
     text-align: center;
