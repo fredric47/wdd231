@@ -65,7 +65,7 @@
                      <div>
                         <label for="oTitle">
                             Organization Title:
-                            <input type="text" id="oTitle" name="organization" placeholder="Vice President" autocomplete="organization-title" title="a-z & 4-6 charecters" pattern="[a-z]{4,8}">
+                            <input type="text" id="oTitle" name="organization" placeholder="Vice President" autocomplete="organization-title" title="min 5 charaters, Only letters, spaces & hyphons '-'" pattern="[A-Za-z \-]{5,}">
                         </label>
                      </div>
                     <!-- email address -->
@@ -86,7 +86,7 @@
                      <div>
                         <label for="oName">
                             *Buisness Name:
-                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" required>
+                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" title="Buisness/Organization title" required>
                             <!-- <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea> -->
                         </label>
                      </div>
