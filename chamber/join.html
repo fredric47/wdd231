@@ -44,35 +44,35 @@
         <h1>Cove Fort Chamber of Commerce JOIN</h1>
         <!-- <h2>JOIN</h2> ///////////////////////////////////////////////////// -->
         <div id="formDiv">
-            <form method="get" action="https://fredric47.github.io/wdd231/chamber/thankyou.html" id="joinForm">
+            <form method="get" action="thankyou.html" id="joinForm">
                 <h2>Join Our Chamber</h2>
                 <fieldset>
                     <!-- //first name -->
                      <div>
                         <label for="fname">
                             *First Name:
-                            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="givne-name" required>
                         </label>
                      </div>
                     <!-- last name -->
                      <div>
                         <label for="lname">
                             *Last Name:
-                            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" required>
                         </label>
                      </div>
                     <!-- organization title -->
                      <div>
                         <label for="oTitle">
                             Organization Title:
-                            <input type="text" id="oTitle" name="organization" placeholder="Vice President">
+                            <input type="text" id="oTitle" name="organization" placeholder="Vice President" autocomplete="organization-title" title="a-z & 4-6 charecters" pattern="[a-z]{4,8}">
                         </label>
                      </div>
                     <!-- email address -->
                      <div>
                         <label for="email">
                             *Email Address:
-                            <input type="email" id="email" name="emial" placeholder="JohnD@snailmail.com" required>
+                            <input type="email" id="email" name="emial" placeholder="JohnD@snailmail.com" title="include @ your email provider" autocomplete="email" required>
                         </label>
                      </div>
                     <!-- mobile phone number -->
@@ -82,11 +82,12 @@
                             <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
                         </label>
                      </div>
-                    <!-- buisness/organiaation's name -->
+                    <!-- buisness/organization's name -->
                      <div>
                         <label for="oName">
                             *Buisness Name:
-                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" required>
+                            <!-- <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" required> -->
+                            <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea>
                         </label>
                      </div>
                     <!-- membership level -->
