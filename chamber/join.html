@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/member-cards.js" defer></script>
-    <title>Directory for Cove Fort Chamber of commerce</title>
+    <script src="scripts/form-data.js" defer></script>
+    <title>Cove Fort Chamber of commerce Join</title>
     <meta name="description"
         content="A chamber of commerce for the Cove Fort region, designed to promote thriving buisnesses and self sufficient citizens">
     <meta name="author" content="Luke Pratt">
@@ -41,13 +41,91 @@
         <!-- <img id="lightdark" src="images/light-dark-icon.svg" alt="dark to licht icon"> -->
     </header>
     <main>
-        <h1>JOIN PAGE!!!!</h1>
-        <H1>UNDER DEVELOPMENT!!!!</H1>
         <h1>Cove Fort Chamber of Commerce JOIN</h1>
         <!-- <h2>JOIN</h2> ///////////////////////////////////////////////////// -->
-        <button id="gridList">Grid/List</button>
-        <div id="cards">
-
+        <div id="formDiv">
+            <form method="get" action="https://fredric47.github.io/wdd231/chamber/thankyou.html" id="joinForm">
+                <h2>Join Our Chamber</h2>
+                <fieldset>
+                    <!-- //first name -->
+                     <div>
+                        <label for="fname">
+                            *First Name:
+                            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                        </label>
+                     </div>
+                    <!-- last name -->
+                     <div>
+                        <label for="lname">
+                            *Last Name:
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                        </label>
+                     </div>
+                    <!-- organization title -->
+                     <div>
+                        <label for="oTitle">
+                            Organization Title:
+                            <input type="text" id="oTitle" name="organization" placeholder="Vice President">
+                        </label>
+                     </div>
+                    <!-- email address -->
+                     <div>
+                        <label for="email">
+                            *Email Address:
+                            <input type="email" id="email" name="emial" placeholder="JohnD@snailmail.com" required>
+                        </label>
+                     </div>
+                    <!-- mobile phone number -->
+                     <div>
+                        <label for="phone">
+                            *Mobile Phone#:
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                        </label>
+                     </div>
+                    <!-- buisness/organiaation's name -->
+                     <div>
+                        <label for="oName">
+                            *Buisness Name:
+                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" required>
+                        </label>
+                     </div>
+                    <!-- membership level -->
+                     <div id="membershipLvl">
+                        <span>Membership Level:</span>
+                        <label for="nonProfit">
+                            <input type="radio" id="nonProfit" name="level">
+                            -NP-
+                        </label>
+                        <label for="bronze">
+                            <input type="radio" id="bronze" name="level">
+                            Bronze:
+                        </label>
+                        <label for="silver">
+                            <input type="radio" id="silver" name="level">
+                            Silver:
+                        </label>
+                        <label for="gold">
+                            <input type="radio" id="gold" name="level">
+                            Gold:
+                        </label>
+                     </div>
+                    <!-- buisness/organization's description -->
+                     <div>
+                        <label for="description">
+                            Buisness description:
+                            <input type="text" name="description" id="description">
+                        </label>
+                     </div>
+                    <!-- hidden timestamp -->
+                     <label>
+                        <input type="hidden" id="date" name="date">
+                    </label>
+                    <!-- submit button -->
+                    <div>
+                        <input type="submit" id="submitbtton" value="Send Request">
+                    </div>
+                </fieldset>
+            </form>
         </div>
 
     </main>
