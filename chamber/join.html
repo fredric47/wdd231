@@ -51,14 +51,14 @@
                      <div>
                         <label for="fname">
                             *First Name:
-                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="givne-name" required>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name" title="first name" required>
                         </label>
                      </div>
                     <!-- last name -->
                      <div>
                         <label for="lname">
                             *Last Name:
-                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" required>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="last name" required>
                         </label>
                      </div>
                     <!-- organization title -->
@@ -79,15 +79,15 @@
                      <div>
                         <label for="phone">
                             *Mobile Phone#:
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" title="Phone Number" autocomplete="tel" required>
                         </label>
                      </div>
                     <!-- buisness/organization's name -->
                      <div>
                         <label for="oName">
                             *Buisness Name:
-                            <!-- <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" required> -->
-                            <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea>
+                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" required>
+                            <!-- <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea> -->
                         </label>
                      </div>
                     <!-- membership level -->
@@ -114,7 +114,8 @@
                      <div>
                         <label for="description">
                             Buisness description:
-                            <input type="text" name="description" id="description">
+                            <!-- <input type="text" name="description" id="description"> -->
+                            <textarea name="description" id="description" title="Describe Your buisness/Organization" placeholder="Describe your buisness/organization"></textarea>
                         </label>
                      </div>
                     <!-- hidden timestamp -->

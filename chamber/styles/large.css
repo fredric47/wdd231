@@ -267,6 +267,10 @@ width: 100%;
     padding: .25rem;
 }
 
+input:invalid {
+    border-bottom: solid 5px rgb(255, 81, 81);
+}
+
 /* #formDiv {
     justify-content: cener;
 } */
