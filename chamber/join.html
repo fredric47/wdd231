@@ -11,14 +11,14 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/form-data.js" defer></script>
+    <script src="scripts/form-animations.js" defer></script>
     <title>Cove Fort Chamber of commerce Join</title>
     <meta name="description"
         content="A chamber of commerce for the Cove Fort region, designed to promote thriving buisnesses and self sufficient citizens">
     <meta name="author" content="Luke Pratt">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Chamber of commerce for central Cove Fort">
-    <meta property="og:description"
-        content="This page is for members of the Cove Fort chamber of commerce. It is also for anyone wanting to learn more about our chamber or to help with events.">
+    <meta property="og:description" content="This page is for members of the Cove Fort chamber of commerce. It is also for anyone wanting to learn more about our chamber or to help with events.">
     <meta property="og:image" content="https://fredric47.github.io/wdd231/chamber/images/splash.jpg">
     <meta property="og:url" content="https://fredric47.github.io/wdd231/chamber/directory.html">
 
@@ -40,97 +40,120 @@
         </nav>
         <!-- <img id="lightdark" src="images/light-dark-icon.svg" alt="dark to licht icon"> -->
     </header>
+
     <main>
         <h1>Cove Fort Chamber of Commerce JOIN</h1>
         <!-- <h2>JOIN</h2> ///////////////////////////////////////////////////// -->
-        <div id="formDiv">
-            <form method="get" action="thankyou.html" id="joinForm">
-                <h2>Join Our Chamber</h2>
-                <fieldset>
-                    <!-- //first name -->
-                     <div>
-                        <label for="fname">
-                            *First Name:
-                            <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name" title="first name" required>
+        <section id="joinSection">
+            <div id="formDiv">
+                <form method="get" action="thankyou.html" id="joinForm">
+                    <h2>Join Our Chamber</h2>
+                    <fieldset>
+                        <!-- //first name -->
+                         <div>
+                            <label for="fname">
+                                *First Name:
+                                <input type="text" id="fname" name="fname" placeholder="First Name" autocomplete="given-name" title="first name" required>
+                            </label>
+                         </div>
+                        <!-- last name -->
+                         <div>
+                            <label for="lname">
+                                *Last Name:
+                                <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="last name" required>
+                            </label>
+                         </div>
+                        <!-- organization title -->
+                         <div>
+                            <label for="oTitle">
+                                Organization Title:
+                                <input type="text" id="oTitle" name="organization" placeholder="Vice President" autocomplete="organization-title" title="min 5 charaters, Only letters, spaces & hyphons '-'" pattern="[A-Za-z \-]{7,}">
+                            </label>
+                         </div>
+                        <!-- email address -->
+                         <div>
+                            <label for="email">
+                                *Email Address:
+                                <input type="email" id="email" name="emial" placeholder="JohnD@snailmail.com" title="include @ your email provider" autocomplete="email" required>
+                            </label>
+                         </div>
+                        <!-- mobile phone number -->
+                         <div>
+                            <label for="phone">
+                                *Mobile Phone#:
+                                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" title="Phone Number" autocomplete="tel" required>
+                            </label>
+                         </div>
+                        <!-- buisness/organization's name -->
+                         <div>
+                            <label for="oName">
+                                *Buisness Name:
+                                <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" title="Buisness/Organization title" required>
+                                <!-- <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea> -->
+                            </label>
+                         </div>
+                        <!-- membership level -->
+                         <div id="membershipLvl">
+                            <span>Membership Level:</span>
+                            <label for="nonProfit">
+                                <input type="radio" id="nonProfit" name="level">
+                                -NP-
+                            </label>
+                            <label for="bronze">
+                                <input type="radio" id="bronze" name="level">
+                                Bronze:
+                            </label>
+                            <label for="silver">
+                                <input type="radio" id="silver" name="level">
+                                Silver:
+                            </label>
+                            <label for="gold">
+                                <input type="radio" id="gold" name="level">
+                                Gold:
+                            </label>
+                         </div>
+                        <!-- buisness/organization's description -->
+                         <div>
+                            <label for="description">
+                                Buisness description:
+                                <!-- <input type="text" name="description" id="description"> -->
+                                <textarea name="description" id="description" title="Describe Your buisness/Organization" placeholder="Describe your buisness/organization"></textarea>
+                            </label>
+                         </div>
+                        <!-- hidden timestamp -->
+                         <label>
+                            <input type="hidden" id="date" name="date">
                         </label>
-                     </div>
-                    <!-- last name -->
-                     <div>
-                        <label for="lname">
-                            *Last Name:
-                            <input type="text" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name" title="last name" required>
-                        </label>
-                     </div>
-                    <!-- organization title -->
-                     <div>
-                        <label for="oTitle">
-                            Organization Title:
-                            <input type="text" id="oTitle" name="organization" placeholder="Vice President" autocomplete="organization-title" title="min 5 charaters, Only letters, spaces & hyphons '-'" pattern="[A-Za-z \-]{5,}">
-                        </label>
-                     </div>
-                    <!-- email address -->
-                     <div>
-                        <label for="email">
-                            *Email Address:
-                            <input type="email" id="email" name="emial" placeholder="JohnD@snailmail.com" title="include @ your email provider" autocomplete="email" required>
-                        </label>
-                     </div>
-                    <!-- mobile phone number -->
-                     <div>
-                        <label for="phone">
-                            *Mobile Phone#:
-                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" title="Phone Number" autocomplete="tel" required>
-                        </label>
-                     </div>
-                    <!-- buisness/organization's name -->
-                     <div>
-                        <label for="oName">
-                            *Buisness Name:
-                            <input type="text" id="oName" name="oName" placeholder="Dan's Deserts" autocomplete="organization" title="Buisness/Organization title" required>
-                            <!-- <textarea name="text" id="oName" name="oName" placeholder="Dan's Deserts" title="Organization Name" autocomplete="organization" required></textarea> -->
-                        </label>
-                     </div>
-                    <!-- membership level -->
-                     <div id="membershipLvl">
-                        <span>Membership Level:</span>
-                        <label for="nonProfit">
-                            <input type="radio" id="nonProfit" name="level">
-                            -NP-
-                        </label>
-                        <label for="bronze">
-                            <input type="radio" id="bronze" name="level">
-                            Bronze:
-                        </label>
-                        <label for="silver">
-                            <input type="radio" id="silver" name="level">
-                            Silver:
-                        </label>
-                        <label for="gold">
-                            <input type="radio" id="gold" name="level">
-                            Gold:
-                        </label>
-                     </div>
-                    <!-- buisness/organization's description -->
-                     <div>
-                        <label for="description">
-                            Buisness description:
-                            <!-- <input type="text" name="description" id="description"> -->
-                            <textarea name="description" id="description" title="Describe Your buisness/Organization" placeholder="Describe your buisness/organization"></textarea>
-                        </label>
-                     </div>
-                    <!-- hidden timestamp -->
-                     <label>
-                        <input type="hidden" id="date" name="date">
-                    </label>
-                    <!-- submit button -->
-                    <div>
-                        <input type="submit" id="submitbtton" value="Send Request">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
+                        <!-- submit button -->
+                        <div>
+                            <input type="submit" id="submitbtton" value="Send Request">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <section id="cards">
+                <div id="nonProfit" class="membershipLevel">
+                    <h2>Non Profit Membership Level</h2>
+                    <button>Learn More</button>
+                </div>
+                <div id="bronze" class="membershipLevel">
+                    <h2>Bronze Membership Level</h2>
+                    <button>Learn More</button>
+                </div>
+                <div id="silver" class="membershipLevel">
+                    <h2>Silver Membership Level</h2>
+                    <button>Learn More</button>
+                </div>
+                <div id="gold" class="membershipLevel">
+                    <h2>Gold Membership Level</h2>
+                    <button>Learn More</button>
+                </div>
+            </section>
+        </section>
 
     </main>
+
     <footer>
         <div>
             <h2>Cove Fort Chamber of commerce</h2>
