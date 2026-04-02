@@ -10,9 +10,9 @@ header {
     padding: 1rem;
 }
 
-main {
+/* main {
 
-}
+} */
 
 #color1 {
     background-color: #0b3d91;
@@ -38,8 +38,21 @@ main {
 }
 
 footer {
+    display: grid;
     background-color: #0b3d91;
     background-color: #17171b;
     color: white;
     padding: 1rem;
+    justify-content: center;
+}
+
+footer a {
+    display: grid;
+    height: 44px;
+    padding: .5rem;
+    border: solid 2px white;
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+    align-items: center;
 }
