@@ -1,0 +1,45 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #0b3d91;
+    background-color: #17171b;
+    color: white;
+    padding: 1rem;
+}
+
+main {
+
+}
+
+#color1 {
+    background-color: #0b3d91;
+    color: white;
+    padding: 1rem;
+}
+
+#color2 {
+    background-color: #fc3d21;
+    padding: 1rem;
+}
+
+#color3 {
+    background-color: #17171b;
+    color: white;
+    padding: 1rem;
+}
+
+#color4 {
+    background-color: #17171b;
+    color: white;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #0b3d91;
+    background-color: #17171b;
+    color: white;
+    padding: 1rem;
+}
