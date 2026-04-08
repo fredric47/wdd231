@@ -38,6 +38,8 @@
         display: flex;
     }
 
-
+    #itemsOfInterest img:hover {
+        box-shadow: none;
+    }
 
 }
