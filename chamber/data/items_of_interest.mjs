@@ -3,7 +3,8 @@ export const itemsOfInterest = [
         "name": "Special Ducks",
         "address": "123N 321S Ducks in the Woods",
         "description": "Ducks can sometiems be hard to find, but here you can come and see them for a fantastic price",
-        "image": "https://github.com/fredric47/wdd231/blob/main/chamber/images/farm-birds.webp?raw=true"
+        "image": "images/farm-birds.webp"
+        // https://github.com/fredric47/wdd231/blob/main/chamber/images/farm-birds.webp?raw=true
     },
 
     {
