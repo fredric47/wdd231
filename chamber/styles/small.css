@@ -42,4 +42,31 @@
         box-shadow: none;
     }
 
+        /* ITEMS OF INTEREST */
+
+    #itemsOfInterest div {
+        grid-template-areas:
+            "name"
+            "image"
+            "description"
+            "address"
+            "button";
+    }
+
+    #itemsOfInterest h2 {
+        grid-area: name;
+    }
+
+    #itemsOfInterest figure {
+        grid-area: image;
+    }
+
+    #itemsOfInterest address {
+        grid-area: address;
+    }
+
+    #itemsOfInterest p {
+        grid-area: description;
+    }
+
 }

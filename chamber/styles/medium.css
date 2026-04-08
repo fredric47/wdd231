@@ -21,4 +21,32 @@
         #joinSection {
             grid-template-columns: none;
         }
+
+        /* ITEMS OF INTERST */
+    #itemsOfInterest {
+        grid-template-columns: 1fr;
+    }
+
+    /* #itemsOfInterest div {
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address";
+    }
+
+    #itemsOfInterest h2 {
+        grid-area: name;
+    }
+
+    #itemsOfInterest figure {
+        grid-area: image;
+    }
+
+    #itemsOfInterest address {
+        grid-area: address;
+    }
+
+    #itemsOfInterest p {
+        grid-area: description;
+    } */
 }

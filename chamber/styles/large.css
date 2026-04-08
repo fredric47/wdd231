@@ -290,6 +290,12 @@ input:invalid {
 
 /* ---------- DISCOVER PAGE ---------- */
 
+#itemsOfInterest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
 #itemsOfInterest div{
     border: solid 2px var(--main-color);
     padding: .5rem;
@@ -299,14 +305,15 @@ input:invalid {
     overflow: hidden;
     max-width: 750px;
     grid-template-areas: 
-    "name"
-    "image"
-    "description"
-    "address";
+    "image name"
+    "image description"
+    "image address"
+    "image button";
 }
 
 #itemsOfInterest h2{
     grid-area: name;
+    border-bottom: solid 2px var(--main-color);
 }
 
 #itemsOfInterest figure{
@@ -324,12 +331,13 @@ input:invalid {
 #itemsOfInterest button {
     padding: .5rem;
     margin: 1rem;
+    grid-area: button;
 }
 
 #itemsOfInterest img {
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 #itemsOfInterest img:hover {
