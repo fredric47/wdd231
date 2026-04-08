@@ -301,6 +301,7 @@ input:invalid {
     padding: .5rem;
     margin: 1rem;
     border-radius: 1rem;
+    background-color: rgb(248, 245, 248);
     display: grid;
     overflow: hidden;
     max-width: 750px;
