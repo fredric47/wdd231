@@ -127,13 +127,18 @@ footer {
 }
 
 #attribution-link a {
+    display: grid; 
+    align-items: center;
+    height: 44px;
+    /* font-size: large; */
     text-decoration: none;
     color: var(--font-white);
 }
 
 #attribution-link a:hover {
     color: var(--accent-red);
-        text-decoration: underline;
+    text-decoration: underline;
+    /* background-color: brown; */
 }
 
 .social-icons img{
