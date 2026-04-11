@@ -1,0 +1,17 @@
+@media only screen and (min-width: 850px) {
+    /*------- HEADE -------*/
+
+    /*------- MAIN -------*/
+    main {
+        display: grid;
+        margin: 0 auto;
+        /* place-items: center; */
+        width: 75vw;
+    }
+
+    /*------- FORM -------*/
+    form {
+        width: 60vw;
+        margin: 0 auto;
+    }
+}

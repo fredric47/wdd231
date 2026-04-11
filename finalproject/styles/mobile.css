@@ -29,6 +29,25 @@ header {
 }
 
 nav {
+    display: none;
+}
+
+#ham-btn {
+    height: 44px;
+    width: 44px;
+    margin: .25rem;
+}
+
+#ham-btn::after {
+    content: '☰';
+    font-size: 2rem;
+}
+
+#ham-btn.bob::after {
+    content: "\00d7";
+}
+
+.show {
     display: grid;
 }
 
@@ -51,19 +70,52 @@ nav a:hover {
 
 /* ------- MAIN ------- */
 
+main {
+    background-color: #f2f2f2;
+    padding: 0 .5rem;
+}
+
 main div {
     border: solid 2px var(--accent-blue);
     margin: .5rem;
     padding: .5rem;
 }
 
+p {
+    font-size: large;
+}
+
+/*------- FORM -------*/
+
 form {
     background-color: #6281b773;
     display: grid;
-    padding: 1rem;
-    margin: .5rem;
+    margin: .25rem;
 }
 
+form div {
+    border: none;
+}
+
+input {
+    height: 44px;
+}
+
+.required::before {
+    content: "*";
+    color: var(--accent-red);
+}
+
+#checkbox {
+    width: 44px;
+    height: 44px;
+}
+
+fieldset #checkbox-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ------ FOOTER ------ */
 
@@ -71,7 +123,17 @@ footer {
     background-color: var(--background-black);
     color: var(--font-white);
     padding: 1rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+}
+
+#attribution-link a {
+    text-decoration: none;
+    color: var(--font-white);
+}
+
+#attribution-link a:hover {
+    color: var(--accent-red);
+        text-decoration: underline;
 }
 
 .social-icons img{

@@ -16,6 +16,7 @@
     <link rel="icon" href="favicon.ico">
 
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,47 +26,99 @@
     <header>
         <a href="index.html"><img id="aalogo" src="images/admiration-logo.svg" alt="Artemis admiration association logo"></a>
         <h1>Artemis Admiration Association</h1>
-        <nav>
+        <button id="ham-btn"></button>
+        <nav id="nav-bar" class="narrow-wide">
             <a class="current" href="index.html">Home</a>
             <a href="artemisI.html">Artemis I</a>
             <a href="artemisII.html"> Artemis II</a>
             <a href="artemisIII">Artemis III</a>
         </nav>
+
     </header>
 
     <main>
-
+        <h1>What is Artemis?</h1>
         <div>
-            <h1>What is Artemis?</h1>
+            <p> NASA’s Artemis program is the United States’ effort to return humans to the Moon and build a long‑term presence there.
+            Unlike the Apollo missions, which focused on short visits, Artemis is designed for sustained exploration — using the
+            Moon as a training ground for future missions to Mars. </p>
+
+            <p>Artemis will land the first woman and the first person of color on the lunar surface, explore the Moon’s south pole, and
+            develop technologies that support deep‑space travel. The program combines NASA’s spacecraft and rockets with major
+            contributions from commercial partners and international space agencies.</p>
         </div>
+        <br>
+        <h1>So how are they going to do it?</h1>
+        <div id="artemis-overview">
+            <div>
+                <h2>Artemis I</h2>
+                <p>An uncrewed test flight launched in 2022. Orion traveled around the Moon and back, proving the Space Launch System (SLS)
+                rocket and spacecraft systems work for future crewed missions.</p>
+            </div>
 
-        <a href="finalPlan.html">Final Plan Document</a>
+            <div>
+                <h2>Artemis II</h2>
+                <p>The first crewed mission of the program. A team of astronauts will fly around the Moon, testing life‑support,
+                navigation, and deep‑space operations to prepare for lunar landings.</p>
+            </div>
 
-        <form id="joinform" action="thankyou.html">
-            <label for="firstN">
-                <input type="text">
-            </label>
-
-            <label for="lastN">
-                <input type="text">
-            </label>
-
-            <input type="submit">
-        </form>
+            <div>
+                <h2>Artemis III</h2>
+                <p>Planned as the mission that will return humans to the lunar surface, targeting the Moon’s south pole. It will use a
+                Human Landing System to place astronauts on the surface and begin long‑term exploration.</p>
+            </div>
+        </div>
+        <!-- <a href="finalPlan.html">Final Plan Document</a> -->
+         <br>
+         <h1>Don't miss out on the latest news!</h1>
+        <section>
+            <form method="get" action="thankyou.html" id="joinform">
+                <h1>Stay up to date!</h1>
+                <fieldset>
+                    <div>
+                        <label for="firstN" class="required">First Name ----------</label>
+                        <input type="text" id="firstN" name="firstN" autocomplete="given-name" required>
+                    </div>
+                    <div>
+                        <label for="lastN">Last Name ------------</label>
+                        <input type="text" id="lastN" name="lastN" autocomplete="family-name">
+                    </div>
+                    <div>
+                        <label for="email" class="required">Email Address -----</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="phone" id="phone-label" class="">Phone Number -----</label>
+                        <input type="tel" id="phone" autocomplete="tel">
+                    </div>
+                    <div id="checkbox-label">
+                        <label for="checkbox" ">Want to receive text notifications? ------</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </div>
+                    <div>
+                        <input type="submit" value="send Request">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
         
     <footer>
-        <h1>footer</h1>
+        <div id="copywrite">
+            <p id="copywrite-p"></p>
+            <p id="last-modified"></p>
+        </div>
+
         <div id="social-links">
             <a class="social-icons" href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon"></a>
             <a class="social-icons" href="https://www.linkedin.com/in/"><img src="images/linkedin-icon.svg" alt="linkedin icon"></a>
             <a class="social-icons" href="https://github.com/fredric47"><img src="images/github-square-icon.svg" alt="github icon"></a>
         </div>
-
-        <div id="copywrite">
-            <p id="copywrite-p"></p>
-            <p id="last-modified"></p>
+        
+        <div id="attribution-link">
+            <a href="attributions.html">Attribution Page</a>
         </div>
+
     </footer>
 </body>
 </html>

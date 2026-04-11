@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.ico">
 
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,8 @@
         <a href="index.html"><img id="aalogo" src="images/admiration-logo.svg"
                 alt="Artemis admiration association logo"></a>
         <h1>Artemis Admiration Association</h1>
-        <nav>
+        <button id="ham-btn"></button>
+        <nav id="nav-bar" class="narrow-wide">
             <a href="index.html">Home</a>
             <a class="current" href="artemisI.html">Artemis I</a>
             <a href="artemisII.html"> Artemis II</a>
@@ -37,20 +39,55 @@
     </header>
 
     <main>
-        <h1>1</h1>
+        <h1>Artemis I</h1>
+        <div>
+            <p>
+                🌕 Artemis I — Detailed Overview<br>
+                🚀 Mission Purpose
+                Artemis I was the first full test flight of NASA’s deep‑space exploration system: the Space Launch System (SLS) rocket
+                and the Orion spacecraft. Its goal was to prove that all major systems could safely carry astronauts on future missions.
+                <br>
+                🛰️ What the Mission Did<br>
+                Launched in November 2022<br>
+                <br>
+                Sent the uncrewed Orion spacecraft on a 25‑day journey around the Moon<br>
+                <br>
+                Traveled over 1.4 million miles<br>
+                <br>
+                Entered a distant retrograde lunar orbit — farther than any spacecraft designed for humans had ever gone<br>
+                <br>
+                Tested heat shields, navigation, propulsion, communication, and deep‑space radiation protection<br>
+                <br>
+                🔧 Key Technologies Tested<br>
+                SLS Rocket: The most powerful rocket NASA has ever built<br>
+                <br>
+                Orion Capsule: Life‑support systems, power, propulsion, and re‑entry capabilities<br>
+                <br>
+                Heat Shield: Survived re‑entry at ~25,000 mph<br>
+                <br><br>
+                Recovery Operations: U.S. Navy teams practiced retrieving Orion from the Pacific Ocean<br>
+                <br>
+                🏁 Mission Outcome<br>
+                Artemis I was a complete success, validating the hardware and systems needed for crewed missions. It paved the way for
+                Artemis II.<br>
+            </p>
+        </div>
     </main>
 
     <footer>
-        <h1>footer</h1>
+        <div id="copywrite">
+            <p id="copywrite-p"></p>
+            <p id="last-modified"></p>
+        </div>
+
         <div id="social-links">
             <a class="social-icons" href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon"></a>
             <a class="social-icons" href="https://www.linkedin.com/in/"><img src="images/linkedin-icon.svg" alt="linkedin icon"></a>
             <a class="social-icons" href="https://github.com/fredric47"><img src="images/github-square-icon.svg" alt="github icon"></a>
-        </div>
+        </div>  
 
-        <div id="copywrite">
-            <p id="copywrite-p"></p>
-            <p id="last-modified"></p>
+        <div id="attribution-link">
+            <a href="attributions.html">Attribution Page</a>
         </div>
     </footer>
 </body>

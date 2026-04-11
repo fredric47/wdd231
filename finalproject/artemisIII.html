@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.ico">
 
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,8 @@
     <header>
         <a href="index.html"><img id="aalogo" src="images/admiration-logo.svg" alt="Artemis admiration association logo"></a>
         <h1>Artemis Admiration Association</h1>
-        <nav>
+        <button id="ham-btn"></button>
+        <nav id="nav-bar" class="narrow-wide">
             <a href="index.html">Home</a>
             <a href="artemisI.html">Artemis I</a>
             <a href="artemisII.html"> Artemis II</a>
@@ -36,20 +38,57 @@
     </header>
 
     <main>
-        <h1>3</h1>
+        <h1>Artemis III</h1>
+        <div>
+            <p>
+                🌑 Artemis III — Detailed Overview<br>
+                🌕 Mission Purpose<br>
+                Artemis III aims to land astronauts on the Moon for the first time since Apollo 17 in 1972. It focuses on exploring the
+                Moon’s south pole, a region rich in water ice and scientific potential.<br>
+                <br>
+                🚀 What the Mission Will Do<br>
+                Launch astronauts aboard Orion using the SLS rocket<br>
+                <br>
+                Dock with the Human Landing System (HLS) — a modified SpaceX Starship — in lunar orbit<br>
+                <br>
+                Land two astronauts near the south pole<br>
+                <br>
+                Conduct multiple moonwalks to collect samples and test tools<br>
+                <br>
+                Deploy scientific instruments and technology demonstrations<br>
+                <br>
+                Study water ice in permanently shadowed craters<br>
+                <br>
+                🧪 Key Mission Goals<br>
+                Explore the south pole for resources<br>
+                <br>
+                Test new spacesuits designed for mobility and durability<br>
+                <br>
+                Demonstrate long‑duration surface operations<br>
+                <br>
+                Begin building the foundation for a sustained lunar presence<br>
+                <br>
+                🛰️ Long‑Term Impact<br>
+                Artemis III marks the beginning of NASA’s plan to establish a lunar base camp, support international partnerships, and
+                prepare for human missions to Mars.<br>
+            </p>
+        </div>
     </main>
 
     <footer>
-        <h1>footer</h1>
+        <div id="copywrite">
+            <p id="copywrite-p"></p>
+            <p id="last-modified"></p>
+        </div>
+
         <div id="social-links">
             <a class="social-icons" href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon"></a>
             <a class="social-icons" href="https://www.linkedin.com/in/"><img src="images/linkedin-icon.svg" alt="linkedin icon"></a>
             <a class="social-icons" href="https://github.com/fredric47"><img src="images/github-square-icon.svg" alt="github icon"></a>
         </div>
 
-        <div id="copywrite">
-            <p id="copywrite-p"></p>
-            <p id="last-modified"></p>
+        <div id="attribution-link">
+            <a href="attributions.html">Attribution Page</a>
         </div>
     </footer>
 </body>

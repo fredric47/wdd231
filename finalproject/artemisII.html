@@ -17,6 +17,7 @@
     <link rel="icon" href="favicon.ico">
 
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,8 @@
         <a href="index.html"><img id="aalogo" src="images/admiration-logo.svg"
                 alt="Artemis admiration association logo"></a>
         <h1>Artemis Admiration Association</h1>
-        <nav>
+        <button id="ham-btn"></button>
+        <nav id="nav-bar" class="narrow-wide">
             <a href="index.html">Home</a>
             <a href="artemisI.html">Artemis I</a>
             <a class="current" href="artemisII.html"> Artemis II</a>
@@ -37,20 +39,55 @@
     </header>
 
     <main>
-        <h1>2</h1>
+        <h1>Artemis II</h1>
+        <div>
+            <p>
+                🌖 Artemis II — Detailed Overview<br>
+                👨‍🚀 Mission Purpose<br>
+                Artemis II will be the first crewed mission of the Artemis program. Its goal is to test Orion’s life‑support systems and
+                demonstrate that astronauts can safely travel to the Moon and back.<br>
+                <br>
+                🧭 What the Mission Will Do
+                Carry four astronauts on a 10‑day mission<br>
+                <br>
+                Perform a high‑Earth orbit maneuver to test systems<br>
+                
+                Conduct a lunar flyby, traveling thousands of miles beyond the far side of the Moon<br>
+                <br>
+                Test communication, navigation, and manual flight operations<br>
+                <br>
+                Evaluate how Orion performs with a crew on board<br>
+                <br>
+                🛰️ Crew Objectives<br>
+                Verify environmental control and life‑support systems<br>
+                <br>
+                Test manual control of Orion<br>
+                <br>
+                Practice emergency procedures<br>
+                <br>
+                Collect data on crew health and performance in deep space<br>
+                <br>
+                🌍 Why It Matters<br>
+                Artemis II is the final major step before returning humans to the lunar surface. It ensures that every system works
+                safely with astronauts aboard.<br>
+            </p>
+        </div>
     </main>
 
     <footer>
-        <h1>footer</h1>
+        <div id="copywrite">
+            <p id="copywrite-p"></p>
+            <p id="last-modified"></p>
+        </div>
+
         <div id="social-links">
             <a class="social-icons" href="https://www.youtube.com/"><img src="images/youtube-icon.svg" alt="youtube icon"></a>
             <a class="social-icons" href="https://www.linkedin.com/in/"><img src="images/linkedin-icon.svg" alt="linkedin icon"></a>
             <a class="social-icons" href="https://github.com/fredric47"><img src="images/github-square-icon.svg" alt="github icon"></a>
-        </div>
+        </div>  
 
-        <div id="copywrite">
-            <p id="copywrite-p"></p>
-            <p id="last-modified"></p>
+        <div id="attribution-link">
+            <a href="attributions.html">Attribution Page</a>
         </div>
     </footer>
 </body>

@@ -1,9 +1,50 @@
 @media only screen and (min-width: 600px){
-    /*------- HEADE -------*/
+    /*------- HEADER -------*/
 
-    nav {
+    nav.narrow-wide {
             display: flex;
             justify-content: space-around;
         }
+
+    #ham-btn {
+        display: none;
+    }
+
+    /*------- FORM --------*/
+    form {
+        padding: 1rem;
+        margin: .5rem;
+    }
+
+    #artemis-overview {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /*------- FOOTER -------*/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--background-black);
+        color: var(--font-white);
+        padding: 1rem;
+        /* margin-top: 1rem; */
+        justify-content: center;
+    }
+
+    #copywrite-div {
+        grid-column: 1/2;
+    }
+
+    #social-links {
+        grid-column: 2/3;       
+        margin-left: 1.5rem;
+    }
+
+    #attribution-link {
+        grid-column: 1/-1;
+        padding: .25rem;
+    }
 
 }
