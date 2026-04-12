@@ -11,22 +11,7 @@
     }
 
    /* ------- MAIN ------- */
-   .artemis-info {
-        display: grid;
-        grid-template-columns: 70% auto;
-        text-align: left;
-   }
-
-   .artemis-info div{
-       text-align: left;
-       padding: .2rem;
-   }
-
-    .artemis-info div p{
-        text-align: left;
-        padding: 1.2rem;
-    }
-
+   
     /*------- FORM --------*/
     form {
         padding: 1rem;

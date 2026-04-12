@@ -6,7 +6,21 @@
         display: grid;
         margin: 0 auto;
         /* place-items: center; */
-        width: 75vw;
+        width: 85vw;
+    }
+
+    .artemis-info {
+        display: grid;
+        grid-template-columns: 70% auto;
+        text-align: left;
+    }
+
+    .artemis-info div {
+        text-align: left;
+    }
+
+    .artemis-info div p {
+        text-align: left;
     }
 
     /*------- FORM -------*/
