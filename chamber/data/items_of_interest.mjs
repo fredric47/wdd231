@@ -16,7 +16,7 @@ export const itemsOfInterest = [
     },
 
     {
-        "name": "Poppy the Cat",
+        "name": "Candy the Cat",
         "address": "146N 642S Duck Marsh",
         "description": "Ever wanted to see a cat that was completly unique and unlike anyother ever? We've got one! (Just try and prove us wrong).",
         "image": "images/cat.webp"

@@ -85,6 +85,21 @@ p {
     font-size: large;
 }
 
+#orion-crew {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    justify-content: center;
+}
+
+#membersh2 {
+    grid-column: 1/-1;
+}
+
+.portrait {
+    display: none;
+    margin-bottom: .5rem;
+}
+
 /*------- FORM -------*/
 
 form {
